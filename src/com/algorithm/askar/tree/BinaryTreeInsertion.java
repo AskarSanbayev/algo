@@ -33,9 +33,9 @@ public class BinaryTreeInsertion {
             return new TreeNode(val);
         }
         if (root.val > val) {
-            root.left = insertIntoBST(root.left, val);
+            root.left = insertIntoRecursive(root.left, val);
         } else {
-            root.right = insertIntoBST(root.right, val);
+            root.right = insertIntoRecursive(root.right, val);
         }
         return root;
     }
